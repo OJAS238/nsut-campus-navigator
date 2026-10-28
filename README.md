@@ -3,7 +3,6 @@
 A smart campus navigation and resource planning web app for **Netaji Subhas University of Technology (NSUT), Dwarka**. It models the campus as a graph, finds routes between buildings with classic graph algorithms, plans the cheapest road network, and schedules venues and staff for the **Moksha** fest.
 
 **Live demo:** https://nsut-campus-navigator.vercel.app
-
 ## Features
 
 | Tab | What it does |
@@ -47,7 +46,6 @@ There are no runtime dependencies and no backend.
 │   ├── engine.js       # Campus data, graph algorithms, Moksha planner, library (no DOM code)
 │   ├── main.js         # User interface: rendering, tabs and event handling
 │   └── styles.css      # Theme and layout
-├── STITCH_PROMPT.md    # Prompt used to design the UI in Google Stitch
 ├── package.json
 └── README.md
 ```
@@ -105,3 +103,5 @@ Everything campus-specific lives in `src/engine.js`:
 
 - Campus layout based on the "NSUT The Map" illustration (credit: The Alliance)
 - Built by [@OJAS238](https://github.com/OJAS238)
+- Built by [@Tanmay-y](https://github.com/Tanmay-y)
+- Built by [@AnjuSinha07](https://github.com/AnjuSinha07)
