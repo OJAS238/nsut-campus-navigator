@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Campus Navigator — NSUT Dwarka</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <div class="drag-handle"><div class="drag-bar"></div></div>
+      <header class="brand-header">
+        <div class="brand-top">
+          <div class="brand-title-wrap">
+            <div class="brand-icon">
+              <span class="material-symbols-outlined">explore</span>
+            </div>
+            <div>
+              <h1 class="brand-title">Campus Navigator</h1>
+              <p class="brand-sub">NSUT campus · map-based route graph</p>
+            </div>
+          </div>
+          <button class="icon-btn theme-toggle" id="theme-btn" title="Toggle dark/light theme">
+            <span class="material-symbols-outlined" id="theme-icon">dark_mode</span>
+          </button>
+        </div>
+        <nav class="tabs" id="tabs"></nav>
+      </header>
+      <div id="pn"></div>
+    </aside>
+    <main class="mapw">
+      <svg id="map" viewBox="0 0 655 771" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tools">
+        <button class="hud-btn hud-primary" data-a="locate" title="Locate Me at Main Gate">
+          <span class="material-symbols-outlined">my_location</span>
+          <span>Locate Me</span>
+        </button>
+        <button class="hud-btn" data-a="clr" title="Clear Route">
+          <span class="material-symbols-outlined">close</span>
+          <span>Clear Route</span>
+        </button>
+        <div class="zoom-cluster">
+          <button class="zoom-btn" data-a="zi" title="Zoom In"><span class="material-symbols-outlined">add</span></button>
+          <div class="zoom-div"></div>
+          <button class="zoom-btn" data-a="zo" title="Zoom Out"><span class="material-symbols-outlined">remove</span></button>
+          <div class="zoom-div"></div>
+          <button class="zoom-btn" data-a="zr" title="Reset View"><span class="material-symbols-outlined">refresh</span></button>
+        </div>
+      </div>
+      <div id="ed"></div>
+      <div id="pop"></div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
